@@ -33,7 +33,7 @@ body {
 }
 
 .line {
-  background-color: red;
+  background-color: rgb(186, 78, 78);
   height: fit-content;
 }
 .line h1 {

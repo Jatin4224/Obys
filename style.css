@@ -121,3 +121,19 @@ body {
     font-weight: 500;
   }
 }
+
+.we-design {
+  background-color: aqua;
+  width: 72%;
+  margin-left: 28%;
+}
+
+.we-design:nth-child(2) {
+  margin-top: 12vh;
+}
+.we-design h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+}

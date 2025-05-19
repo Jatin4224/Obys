@@ -43,6 +43,14 @@ function loadingAnimation() {
   tl.to("#loader", {
     display: "none",
   });
+  tl.from("#nav", {
+    opacity: 0,
+  });
+  tl.from("#we-design1 h1,#we-design2 h1,#we-design3 h2,#we-design4 h1", {
+    y: 120,
+    stagger: 0.2,
+    opacity: 0,
+  });
 }
 function cursorAnimation() {
   document.addEventListener("mousemove", function (dets) {

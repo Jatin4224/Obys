@@ -212,7 +212,7 @@ body {
 #page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: aquamarine;
+  padding: 17vw 2vw;
   position: relative;
 }
 
@@ -423,4 +423,54 @@ body {
 #footer > h5 {
   font-weight: 500;
   font-size: 1vw;
+}
+
+#page3 {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #ffa63d;
+  padding: 5vw;
+  margin-bottom: 23vh;
+}
+
+#page3 h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 28vw;
+}
+
+#page3 .underline {
+  margin-left: 28vw;
+}
+
+#image-div-container {
+  background-color: aquamarine;
+  padding: 1vw;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.image-div {
+  height: 33vw;
+  position: relative;
+  overflow: hidden;
+  width: 24vw;
+  background-color: blue;
+  flex-shrink: 0;
+}
+
+.image-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+._canvas_container {
+  z-index: 99999 !important;
 }

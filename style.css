@@ -220,8 +220,8 @@ body {
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background-color: gray;
-  padding-top: 5vh;
+
+  padding-top: 7%;
 }
 
 #page4-content {
@@ -236,7 +236,7 @@ body {
 }
 
 #page4-content .underline {
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: #fff;
   margin: 5vw 0;
@@ -264,7 +264,7 @@ body {
   width: 33vw;
   padding: 3vw;
   position: relative;
-  margin-top: -35vh;
+  margin-top: -38vh;
   margin-left: 26vw;
 }
 
@@ -283,4 +283,75 @@ body {
 .blue-div-elem p {
   width: 40%;
   font-size: 0.7vw;
+}
+
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: gray;
+  position: relative;
+}
+
+.elem {
+  background-color: red;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: -2vw;
+}
+
+.elem h1 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marquee-animation;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: rotateX(calc(-100% - 20px));
+  }
+}
+
+.elem2 {
+  background-color: red;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 1vw;
+}
+
+.elem2 h1 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  transform: translateX((calc(-100% - 20px)));
+  animation-name: marquee-animation;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.elem span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+.elem2 span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
 }

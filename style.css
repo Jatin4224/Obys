@@ -31,7 +31,10 @@ body {
   position: relative;
   background-color: #030303;
 }
-
+#main > div {
+  margin: 0;
+  padding: 0;
+}
 #page1 {
   height: 100vh;
   width: 100%;
@@ -209,19 +212,27 @@ body {
   z-index: 999;
 }
 
+/* #page3 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 17vw 2vw;
+  position: relative;
+  top: 20%;
+} */
 #page3 {
   min-height: 100vh;
   width: 100%;
   padding: 17vw 2vw;
   position: relative;
+  top: 0;
 }
 
 #page4 {
-  min-height: 100vh;
+  background-color: #0b0b0b;
+  min-height: 10vh;
   position: relative;
   width: 100%;
-
-  padding-top: 7%;
+  padding-top: 0.1%;
 }
 
 #page4-content {
@@ -301,6 +312,7 @@ body {
   width: 100%;
 
   position: relative;
+  background-color: #0b0b0b;
 }
 
 .elem {
@@ -368,7 +380,7 @@ body {
 #footer {
   height: 100vh;
   width: 100%;
-
+  background-color: #0b0b0b;
   position: relative;
   padding-left: 28vw;
   padding-right: 2vw;
@@ -429,7 +441,7 @@ body {
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background-color: #ffa63d;
+
   padding: 5vw;
   margin-bottom: 23vh;
 }
@@ -445,9 +457,8 @@ body {
   margin-left: 28vw;
 }
 
-#image-div-container {
-  background-color: aquamarine;
-  padding: 1vw;
+#image-div-container1 {
+  padding: 5vw;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -460,11 +471,12 @@ body {
   position: relative;
   overflow: hidden;
   width: 24vw;
-  background-color: blue;
+
   flex-shrink: 0;
 }
 
 .image-div img {
+  gap: 5vh;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -473,4 +485,44 @@ body {
 
 ._canvas_container {
   z-index: 99999 !important;
+}
+
+.page3-circle1 {
+  height: 20vw;
+  width: 20vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 50%;
+  margin-top: -38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3-circle1 svg {
+  height: 40%;
+}
+#image-div-container2 {
+  padding: 12vw;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.page3-circle2 {
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 50%;
+  margin-top: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page3-circle2 svg {
+  height: 40%;
 }
